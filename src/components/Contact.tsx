@@ -49,7 +49,7 @@ function Contact() {
   };
 
   const handleEmailClick = () => {
-    const mailtoLink = "mailto:your@email.com";
+    const mailtoLink = "mailto:cansh2003@email.com";
     window.location.href = mailtoLink;
   };
 
