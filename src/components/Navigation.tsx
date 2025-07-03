@@ -89,7 +89,7 @@ function Navigation({ parentToChild, modeChange }: any) {
           <ListItemButton
             sx={{ textAlign: "center" }}
             component="a"
-            href="/Anshuli_Chitade.pdf"
+            href="https://anshuli-chitade.github.io/profile-card-web/Anshuli_Chitade.pdf"
             download
           >
             <ListItemText primary="Download CV" />
@@ -133,7 +133,7 @@ function Navigation({ parentToChild, modeChange }: any) {
               </Button>
             ))}
             <Button
-              href="/Anshuli_Chitade.pdf"
+              href="https://anshuli-chitade.github.io/profile-card-web/Anshuli_Chitade.pdf"
               download
               className="download-btn"
             >
