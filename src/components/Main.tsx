@@ -10,7 +10,7 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src={profile} alt="Avatar" />
+          <img src={profile} alt="Anshuli Chitade - Profile" />
         </div>
         <div className="content">
           <div className="social_icons">
@@ -29,8 +29,11 @@ function Main() {
               <LinkedInIcon />
             </a>
           </div>
-          <h1>Anshuli Chitade</h1>
-          <p>Full Stack Engineer</p>
+
+          <h1 className="hero-title">Hi, I'm Anshuli Chitade</h1>
+          <p className="hero-subtitle" color="text.primary">
+            Full Stack Engineer | Building scalable and user-friendly web apps.
+          </p>
 
           <div className="mobile_social_icons">
             <a
