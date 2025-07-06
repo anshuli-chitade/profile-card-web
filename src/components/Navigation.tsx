@@ -87,12 +87,17 @@ function Navigation({ parentToChild, modeChange }: any) {
         ))}
         <ListItem disablePadding>
           <ListItemButton
-            sx={{ textAlign: "center" }}
-            component="a"
             href="https://anshuli-chitade.github.io/profile-card-web/Anshuli_Chitade.pdf"
             download
           >
-            <ListItemText primary="Download CV" />
+            <ListItemText
+              primary="Download CV"
+              sx={{
+                border: "1px solid",
+                borderRadius: "50px",
+                textAlign: "center",
+              }}
+            />
           </ListItemButton>
         </ListItem>
       </List>
@@ -136,6 +141,12 @@ function Navigation({ parentToChild, modeChange }: any) {
               href="https://anshuli-chitade.github.io/profile-card-web/Anshuli_Chitade.pdf"
               download
               className="download-btn"
+              style={{
+                borderColor: "text.primary",
+                color: "text.primary",
+                border: "1px solid",
+                borderRadius: "50px",
+              }}
             >
               <DownloadIcon style={{ marginRight: "8px" }} />
               Download CV

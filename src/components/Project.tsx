@@ -16,7 +16,6 @@ import { projectsData } from "../constants/constant"; // move all project info h
 interface ProjectType {
   title: string;
   image: string;
-  url: string;
   shortDesc: string;
   fullDesc: string;
   duration: string;
@@ -38,8 +37,6 @@ const Project = () => {
     setOpen(false);
     setActiveProject(null);
   };
-
-  console.log("activeProject---", activeProject);
 
   return (
     <div className="projects-container" id="projects">
@@ -86,14 +83,15 @@ const Project = () => {
                   <strong>{activeProject.title}</strong>
                 </Typography>
                 <Typography variant="subtitle1">
-                  <strong>Duration:</strong> {activeProject.duration}
+                  <strong>Duration: </strong> {activeProject.duration}
                 </Typography>
                 <Typography variant="subtitle1">
-                  <strong>Role:</strong> {activeProject.role}
+                  <strong>Role: </strong> {activeProject.role}
                 </Typography>
-                {/* <Typography variant="body1" sx={{ mt: 2 }}>
+                <Typography variant="subtitle1" color="text.primary">
+                  <strong>Description: </strong>
                   {activeProject.fullDesc}
-                </Typography> */}
+                </Typography>
                 <Typography variant="subtitle2" sx={{ mt: 2 }}>
                   <strong>Responsibilities:</strong>
                 </Typography>
@@ -105,11 +103,21 @@ const Project = () => {
                 <Typography variant="subtitle2">
                   <strong>Learnings:</strong>
                 </Typography>
-                <ul>
-                  {activeProject.learnings.map((item, idx) => (
-                    <li key={idx}>{item}</li>
+                <Typography component="ul" sx={{ pl: 2, mb: 1 }}>
+                  {activeProject.responsibilities.map((item, idx) => (
+                    <Typography
+                      component="li"
+                      key={idx}
+                      sx={{
+                        fontSize: "12px",
+                        fontFamily: "inherit",
+                        listStyle: "disc",
+                      }}
+                    >
+                      {item}
+                    </Typography>
                   ))}
-                </ul>
+                </Typography>
               </>
             )}
           </Box>

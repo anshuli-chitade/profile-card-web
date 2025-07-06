@@ -7,7 +7,6 @@ export const projectsData = [
   {
     title: "QARA – Quality Assurance with Rapid Automation",
     image: qara,
-    url: "https://www.filmate.club/",
     shortDesc:
       "A test automation suite enhanced with custom Playwright reports.",
     fullDesc:
@@ -26,50 +25,61 @@ export const projectsData = [
     ],
   },
   {
-    title: "xSpaces – Multiplayer 3D Experience",
+    title: "xSpaces - Product Management Tool",
     image: xspaces,
-    url: "https://yujisatojr.itch.io/highspeedchase",
     shortDesc:
-      "A web-integrated 3D multiplayer experience using Unity and React.",
+      "A collaborative, spreadsheet-style workspace designed for structured product planning and team coordination.",
     fullDesc:
-      "xSpaces is a gamified platform featuring multiplayer functionality. I contributed to building the interface using React.js and implemented integrations with Unity WebGL components. This allowed seamless interaction between frontend UI and the game canvas.",
+      "xSpaces is a web-based platform that enables teams to collaboratively manage product data in a flexible, spreadsheet-style environment. It supports structured workflows, grid-based editing, and custom views tailored to product planning needs. I contributed across both frontend and backend, working on interactive features, performance improvements, and overall application stability.",
     duration: "2023",
     role: "Full Stack Developer",
     responsibilities: [
-      "Built React.js interface to embed and control Unity 3D canvas",
-      "Implemented communication between Unity and browser components",
-      "Integrated game analytics and session tracking",
+      "Developed and optimized user interface components using React.js and Material UI",
+      "Built advanced features like Card View and Multi-Dimensional Value column field",
+      "Implemented Summary View to present aggregated data insights",
+      "Contributed to backend development using NestJS for data handling and business logic",
+      "Fixed critical bugs and addressed SonarQube code smells for maintainable codebase",
+      "Performed unit testing to ensure reliability of key modules",
+      "Collaborated on deployment strategy and suggested improvements for CI/CD pipelines",
     ],
     learnings: [
-      "Unity + React communication",
-      "WebGL integration",
-      "Game session analytics",
+      "Designing scalable UI components in React.js with Material UI",
+      "Implementing complex data structures like multi-dimensional fields in a spreadsheet layout",
+      "Writing clean and maintainable backend code using NestJS",
+      "Applying unit testing and resolving static analysis issues (SonarQube)",
+      "Improving application quality through performance tuning and code reviews",
     ],
   },
   {
-    title: "VMS – Visitor Management System",
+    title: "VMS Visitor Management System",
     image: vms,
-    url: "https://yujisatojr.itch.io/spacecraft", // Replace with real deployment link if different
-    shortDesc: "Smart visitor check-in/check-out system with QR-based flow.",
+    shortDesc:
+      "A full-stack visitor management solution with real-time QR check-ins, photo capture, and WhatsApp notifications.",
     fullDesc:
-      "VMS is an internal application built for managing real-time visitor check-ins. I contributed to frontend components using React, built reusable form elements, and connected the app to Loopback APIs for data processing. The system enables real-time badge generation, QR scanning, and log management.",
+      "VMS is a comprehensive visitor management system designed to digitize and streamline the entire check-in process. I led the end-to-end development — from frontend to backend — handling all core functionalities independently. This included visitor photo capture and secure storage in Azure Blob Storage using SAS tokens, real-time QR-based check-ins, WhatsApp notifications with encrypted public links, and UI/UX design enhancements. I also integrated the entire module into the HRMS system via .aspx pages with SQL backend support.",
     duration: "2023 – Present",
-    role: "Frontend Engineer",
+    role: "Full Stack Developer",
     responsibilities: [
-      "Developed React-based visitor and admin interface",
-      "Integrated real-time API-driven check-in flow",
-      "Optimized component reusability and responsiveness",
+      "Developed complete frontend using React.js with focus on usability and responsive design",
+      "Captured visitor photos and securely stored them in Azure Blob Storage using SAS tokens",
+      "Built backend services using Node.js and Prisma ORM for visitor data and audit logging",
+      "Implemented real-time QR-based check-in and badge generation workflows",
+      "Created encrypted public URLs and sent automated WhatsApp notifications to visitors",
+      "Integrated the VMS module into HRMS using .aspx pages and SQL Server",
+      "Handled critical issue resolution and performance optimization across the stack",
+      "Contributed significantly to UI/UX flow and interface consistency",
     ],
     learnings: [
-      "Loopback API consumption",
-      "Real-time form flows",
-      "Reusable component design",
+      "Full-stack architecture with Node.js, React, and Prisma ORM",
+      "Secure media storage using Azure Blob Storage and SAS token authentication",
+      "Real-time communication and third-party messaging (WhatsApp Business API)",
+      "Cross-platform system integration (.NET-based HRMS + custom JS module)",
+      "Building scalable, maintainable modules from scratch",
     ],
   },
   {
     title: "Check-In Agent – HRMS Module",
     image: checkin,
-    url: "https://www.datumlearn.com/", // This looks unrelated — replace with internal HRMS link if needed
     shortDesc:
       "Part of HRMS suite for managing employee check-ins at office premises.",
     fullDesc:
