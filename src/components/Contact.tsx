@@ -58,10 +58,10 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Let's Work Together</h1>
-          <h3>Looking for a passionate problem solver?</h3>
+          {/* <h3>Looking for a passionate problem solver?</h3> */}
           <p>
-            If you have a role to fill, a project to kickstart, or an idea to
-            explore — I'm just a message away.
+            I’m always open to exciting projects, cool teams, or innovative
+            ideas. Ping me anytime!{" "}
           </p>
           <Button
             variant="contained"
